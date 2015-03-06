@@ -1,5 +1,5 @@
 app.factory('shows',['$http', function($http) {
-	return {
+	return
 		$http.get('https://s3.amazonaws.com/codecademy-content/courses/ltp4/shows-api/shows.json')
 		.success(function(data) {
 			return data;
@@ -7,5 +7,4 @@ app.factory('shows',['$http', function($http) {
 		.error(function(error) {
 			return error
 		};);
-	}
 }]);
