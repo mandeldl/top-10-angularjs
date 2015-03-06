@@ -15,9 +15,9 @@
 
     <div class="main" ng-controller="MainController">
       <div class="container">
-        <div class="content">
+        <div class="content" ng-repeat="show in shows">
 
-          <tv-show ng-repeat="show in shows" info="show"></tv-show>
+          <tv-show info="show"></tv-show>
 
         </div>
       </div>
@@ -30,7 +30,7 @@
     <script src="js/controllers/MainController.js"></script>
 
     <!-- Directives -->
-    <script src="/js/directives/tvShow.js"></script>
+    <script src="js/directives/tvShow.js"></script>
 
     <!-- Services -->
     <script src="js/services/shows.js"></script>
