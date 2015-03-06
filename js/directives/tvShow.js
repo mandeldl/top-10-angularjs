@@ -6,4 +6,4 @@ app.directive('tvShow', function() {
 		},
 		templateUrl: 'js/directives/tvShow.html'
 	}
-};)
+});
